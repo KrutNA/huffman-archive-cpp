@@ -30,3 +30,11 @@ const usize BITS_IN_BYTE = 8;
  * Size of byte, normally is 2^8 = 256.
  */
 const usize BYTE_SIZE = 1 << BITS_IN_BYTE;
+
+/**
+ * Type preresents temporary not full byte.
+ */
+struct Byte {
+  u8 count;
+  u8 data;
+};

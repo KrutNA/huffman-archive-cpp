@@ -21,6 +21,7 @@ file(GLOB SRCS
   ${SRC_DIR}/main.cpp
   ${SRC_DIR}/huffman.cpp
   ${SRC_DIR}/binary_map.cpp
+  ${SRC_DIR}/encode.cpp
   )
 
 include_directories(
