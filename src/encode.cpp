@@ -14,7 +14,6 @@ u64 encode(std::istream &data,
   
   while (!data.eof()) {
     u8 byte = data.get();
-    ++written;
 
     // Select data by byte
     auto binary = map[byte];
@@ -36,6 +35,7 @@ u64 encode(std::istream &data,
 
       // Write byte to stream
       buffer << tmp;
+      ++written;
 
       // Update last with binary
       last.data = binary->bytes[index] & BYTES[last.count];
